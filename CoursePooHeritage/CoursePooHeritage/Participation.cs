@@ -8,10 +8,10 @@ namespace CoursePooHeritage
 {
     public class Participation
     {
-        private int numDossard;
+        private static int numDossard;
         private int classement;
 
-        public int NumDossard
+        public static int NumDossard
         {
             get
             {

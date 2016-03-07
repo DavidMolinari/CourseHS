@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoursePooHeritage
 {
-    public class Course : ICourse
+    public class Course
     {
         private string nomCompetition;
         private DateTime dateCompetition;
