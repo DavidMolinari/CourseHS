@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoursePooHeritage
 {
-    class Course<T>
+    class Course<T> : ICourse
     {
         private string nomCompetition;
         private DateTime dateCompetition;
@@ -58,8 +58,19 @@ namespace CoursePooHeritage
         /// </summary>
         protected void classerLesParticipants(){}
 
-        private void init(Competiteur competiteursParticipants){
-            
+
+        /// <summary>
+        /// L'initialisation d'un participant, j'ai fait de la merde.
+        /// </summary>
+        /// <param name="lesParticipants"></param>
+        private void init(List<T> lesParticipants)
+        {
+            var participant = new List<object>();
+            foreach(var meh in lesParticipants)
+            {
+                LesParticipants.Add(participant);
+            }
+
         }
          
     }
