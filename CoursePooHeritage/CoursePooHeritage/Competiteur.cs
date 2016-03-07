@@ -88,4 +88,6 @@ namespace CoursePooHeritage
             this.ClassementWCSL = classementWCSL;
         }
     }
+
+
 }
