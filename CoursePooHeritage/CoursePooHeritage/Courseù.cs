@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace CoursePooHeritage
 {
@@ -63,17 +64,32 @@ namespace CoursePooHeritage
         /// L'initialisation d'un participant, j'ai fait de la merde.
         /// </summary>
         /// <param name="lesParticipants"></param>
- 
 
+        public void initTruc()
+        {
+ 
+        }
         public void initTruc(string nomCompetition, DateTime dateCompetition, List<object> lesParticipants)
         {
             this.NomCompetition = nomCompetition;
             this.DateCompetition = dateCompetition;
             this.lesParticipants = new List<object>(lesParticipants);
         }
+
+        private void attribuerDossards(int bornInf, int borneSup)
+        {
+            // histoire de générer un nombre entre Deux nombre, putain obvioussité meh
+            Random rnd = new Random();
+            // bon ça ne veut pas hériter, meh 
+            // J'ai du le mettre en static, histoire de... meh :c
+            // borneSup  + 1 parce que la borneSup n'est pas incluse, ou est incluse je sais plus, mais j'dois mettre +1 
+            var uneParticipation = new Participation();
+            uneParticipation.NumDossard = rnd.Next(bornInf, borneSup + 1);
+        }
         private void traitementDossards()
         {
-            // TODO
+            int nb = lesParticipants.Count;
+
         } 
     }
 }

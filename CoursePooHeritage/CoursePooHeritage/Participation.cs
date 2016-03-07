@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+
 
 namespace CoursePooHeritage
 {
     public class Participation
     {
-        private static int numDossard;
+        private int numDossard;
         private int classement;
 
-        public static int NumDossard
+        public int NumDossard
         {
             get
             {
@@ -39,8 +41,8 @@ namespace CoursePooHeritage
 
         public void init()
         {
-            this.NumDossard = NumDossard;
-            this.Classement = Classement;
+            this.NumDossard = numDossard;
+            this.Classement = classement;
         }
     }
 }
