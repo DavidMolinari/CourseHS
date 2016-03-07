@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoursePooHeritage
 {
-    class Competiteur
+    public class Competiteur
     {
         private int numeroCompetiteur;
         private string nomCompetiteur;

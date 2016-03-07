@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CoursePooHeritage
 {
-    public class Program
+    class Course_Slalom : Course
     {
-        static void Main(string[] args)
-        {
-        }
+      
     }
 }

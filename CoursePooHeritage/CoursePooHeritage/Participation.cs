@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoursePooHeritage
 {
-    class Participation : Course
+    public class Participation
     {
         private int numDossard;
         private int classement;
@@ -24,11 +24,23 @@ namespace CoursePooHeritage
             }
         }
 
-       
+        public int Classement
+        {
+            get
+            {
+                return classement;
+            }
+
+            set
+            {
+                classement = value;
+            }
+        }
 
         public void init()
         {
             this.NumDossard = NumDossard;
+            this.Classement = Classement;
         }
     }
 }
